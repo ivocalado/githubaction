@@ -6,5 +6,6 @@ echo ">> URL: $url";
 wget -O - -q $url > tfsec;
 echo ">>Installling tfsec";
 install tfsec /usr/local/bin/;
+echo "TFSec version: `tfsec --version`"
 echo ">>Running tfsec";
 ./bin/tfsec_scan.sh
